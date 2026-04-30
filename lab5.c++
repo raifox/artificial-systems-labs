@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
 #include <climits>
+#include <windows.h>
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Ukrainian");
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
 
     const int N = 17;
     int mase[N][N], mas[N][N], myPath[N][2], min_val, pathlen = 0;
